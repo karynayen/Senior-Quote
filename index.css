@@ -1,0 +1,374 @@
+
+body{
+	font-family: 'Roboto';
+
+}
+
+h1{
+	color: #0065bc;
+}
+
+button{
+	margin: 5px;
+}
+
+button:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+button:hover, button:focus {
+  outline: none;
+}
+
+
+ a, a:hover, a:focus, a:active {
+     text-decoration: none;
+     color: inherit;
+ }
+.container{
+	height: 250px;
+}
+.container-small{
+	height: 100px;
+}
+.container-middle{
+	background-color:green;
+	border: none; 
+    font-size: 20px; 
+    font-weight: bold; 
+
+	height: 230px;
+	position:fixed;
+	top:250px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	padding-top: 50px;
+
+	color: white;
+	font-size: 2.3em;
+
+}
+.header{
+	text-align: center;
+	background-color: #236fa1;
+	/*background: url("https://padailypost.com/wp-content/uploads/2017/09/lahs.png");
+	background-size: cover;
+	background-position: center;*/
+
+	border: none; 
+    font-size: 20px; 
+    font-weight: bold; 
+
+	height: 230px;
+	position:fixed;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	padding-top: 50px;
+
+	color: white;
+	font-size: 2.3em;
+	
+}
+#graduation-cap{
+	font-size: 3em;
+	padding: 0;
+}
+
+
+.main{
+	width:90%;
+	/*width: 560px;*/
+	margin: 100px 0px;
+	
+}
+.main-text{
+	margin-left:300px;
+}
+.music{
+	
+	/*fix positioning, change it...*/
+	margin-left: 80%;
+	margin-top: 15%;
+}
+
+.buttons{
+	padding-top: 10px;
+}
+.footer-container{
+	text-align:right;
+	height: 100px;
+	background-color: white;
+	width: 100%;
+
+	border-top: solid #D3D3D3;
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	left:0px;
+}
+
+#generate-quote{
+	font-size: 17px;
+	background-color: white;
+  	padding: 15px 30px;
+  	border-radius: 50px;
+  	font-weight: bold;
+}
+#next-steps{
+	font-size: 17px;
+	background-color: #008542;
+  	padding: 19px 30px;
+  	border-radius: 50px;
+  	border: none;
+  	color: white;
+  	font-weight: bold;
+
+}
+
+
+#notes{
+	font-size: 9px;
+	position: absolute;
+	left: 15px;
+	bottom: 1px;
+	/*bottom: -5px;*/
+
+}
+/*.slider{
+	overflow-y: hidden;
+	max-height: 500px; 
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+*/
+
+
+
+
+@media only screen and (max-width: 600px){
+
+	.main{
+		font-family: 'Roboto';
+		font-size: 1em;
+	/*	margin: auto;*/
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	.main-text{
+		margin-left: 5px;
+	}
+	.music{
+		display:none;
+		margin: 0!important;
+		margin-top: 100px;
+	}
+
+	/*.surprise{
+		padding: 0 5px;
+	}*/
+	.surprise p{
+
+		margin: 0 25px !important;
+		text-align:left !important;
+		font-size: 0.8em !important;
+		padding-bottom: 20px !important;
+	}
+	.surprise li{
+		margin-left: 20px !important;
+		text-align:left;
+		font-size: 0.8em !important;
+	}
+	
+	.video-container{
+	    position: relative;
+	    text-align:center;
+	    width: 100%;
+	   /* height: 600px;*/
+	    padding-top:10%;
+	    padding-bottom:10%;
+
+	}
+	.video-container iframe{
+		/*margin-right:25%;*/
+		/*margin-left:-70px;*/
+		margin-left: -15%;
+
+		/*width: 400px;
+		height: 225px;*/
+		width: 310px;
+		height: 175px;
+		margin-bottom: 5%;
+	}
+
+	.video-container .surprise{
+		/*margin-left:-20px;*/
+		margin-left:-7%;
+		width: 100%;
+		/*height:100%;*/
+		padding-top:10px;
+
+	}
+
+	.buttons{
+	  	right: 5%;
+	  	bottom: 5%;
+	  	border-radius: 50px;
+	  	padding-top:2px;
+
+	}
+	#generate-quote{
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		font-size: 0.75em;
+		padding: 10px 12px;
+		font-size: 0.6em;
+	}
+	#next-steps{
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		font-size: 0.75em;
+		padding: 13px 14px;
+		font-size: 0.6em;
+
+	}
+	.footer-container{
+		height:80px;
+	}
+/*	.extra{
+		padding-top:0;
+	}*/
+ 
+}
+
+.extra{
+	/*visibility: hidden;*/
+	position:fixed;
+	right: 20px;
+	top:10px;
+	color:white;
+}
+.extra:hover, .extra:focus{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.video-container{
+    position: relative;
+    text-align:center;
+    
+   /* width: 560px;*/
+ /*   height: 315px;*/
+ /*   left:5px;*/
+ 	margin-left: 12.5%;
+    margin-top: -30px;
+    margin-bottom: 5%;  
+}
+iframe{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.surprise{
+	color: black;
+	background-color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	width: 80%;
+	
+	margin: 0 auto;
+	margin-top:40%;
+	/*margin-top: 100px;*/
+	padding-top:10px
+
+
+}
+
+.surprise h1{
+	color: black;
+	margin-bottom: 40px;
+}
+.surprise p{
+	margin: 0 50px;
+	text-align:left;
+	font-size: 1.1em;
+	padding-bottom: 20px;
+}
+.surprise li{
+	margin: 0 50px;
+	text-align:left;
+	font-size: 1.1em;
+	padding-bottom: 10px;
+	padding-left: 25px;
+
+}
+.sad{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+/*.video-container iframe{
+	background-color:pink;
+	width: 100%;
+	height: 100%;
+	
+}*/
+/*width:	560px;
+	height: 315px;*/
+/* width="560" height="315"*/
+
+@-webkit-keyframes animation {
+    0% {background-color: #D60270;}
+    20% {background-color: #9B4F96;}
+    40% {background-color: #0038A8;}
+    60% {background-color: #D60270;}
+    80% {background-color: #9B4F96;}
+    100% {background-color: #0038A8;}
+}
+
+/*just in case*/
+/*@-webkit-keyframes animation {
+    0% {background-color: #D62900;}
+    25% {background-color: #FF9B55;}
+    50% {background-color: #FFFFFF;}
+    75% {background-color: #D461A6;}
+    100% {background-color: #A50062;}
+}*/
+
+
+.rainbow{
+  -webkit-animation: animation 5s infinite alternate;
+}
+
+.secret{
+	position: absolute;
+	top: 65%;
+	left: 10%;
+	font-size:1.8em;
+
+}
+
+#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
